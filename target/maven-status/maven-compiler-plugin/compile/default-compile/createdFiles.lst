@@ -1,7 +1,0 @@
-com\itmuch\cloud\config\interceptor\TestInterceptor.class
-com\itmuch\cloud\study\entity\TUser.class
-com\itmuch\cloud\study\controller\UserController.class
-com\itmuch\cloud\config\MyWebMvcConfigurerAdapter.class
-com\itmuch\cloud\config\ServletInitializer.class
-com\itmuch\cloud\study\repository\TUserMapper.class
-com\itmuch\cloud\MyApplication.class

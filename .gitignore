@@ -1,0 +1,51 @@
+##intellJ
+*.iml
+
+.idea/
+
+*.ipr
+*.iws
+
+/out/
+
+## Eclipse Core
+.project
+.classpath
+.settings
+
+# External tool builders
+.externalToolBuilers/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific
+.buildpath
+
+# TeXlipse plugin
+.texlipse
+
+## Maven
+target/
+
+## Mac
+.DS_Store
+
+## SVN
+.svn
+
+## tomcat 
+catalina.base_IS_UNDEFINED
+
+## rebel
+rebel-remote.xml
+rebel.xml
