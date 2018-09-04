@@ -1428,7 +1428,7 @@ function webinfo(obj) {
         width: 770,
         modal: true,
         resizable: false
-      //  position:[100,200]
+      //  position:[100,200]
     });
     //   $("#accordion").accordion({ autoHeight: false, active: 0 });  //基本信息
     var str = obj.parent("li").parent("ul").attr("id");
