@@ -1,11 +1,13 @@
 package com.itmuch.cloud.config;
 
+import java.nio.charset.Charset;
 import java.util.List;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -68,12 +70,13 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
 		 registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/images/");
 		 registry.addResourceHandler("/js/**").addResourceLocations("/WEB-INF/js/");
 		 registry.addResourceHandler("/fonts/**").addResourceLocations("/WEB-INF/fonts/");
+		 registry.addResourceHandler("/video/**").addResourceLocations("/WEB-INF/video/");
 		 registry.addResourceHandler("/*.html").addResourceLocations("/WEB-INF/");
 	 }
 	
 	 @Override
      public void addViewControllers(ViewControllerRegistry registry) {
-		 //registry.addViewController("/").setViewName("/index");
+		 registry.addViewController("/").setViewName("/index");
      }
     
 	 @Override
@@ -113,5 +116,11 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
         fastConverter.setFastJsonConfig(fastJsonConfig);
         //将fastjson添加到视图消息转换器列表内
         converters.add(fastConverter);
+        converters.add(responseBodyConverter());
+    }
+    
+    @Bean
+    public HttpMessageConverter<String> responseBodyConverter() {
+        return new StringHttpMessageConverter(Charset.forName("UTF-8"));
     }
 }
