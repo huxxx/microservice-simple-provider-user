@@ -66,6 +66,9 @@ public class MyWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
 	 public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		 registry.addResourceHandler("/css/**").addResourceLocations("/WEB-INF/css/");
 		 registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/images/");
+		 registry.addResourceHandler("/js/**").addResourceLocations("/WEB-INF/js/");
+		 registry.addResourceHandler("/fonts/**").addResourceLocations("/WEB-INF/fonts/");
+		 registry.addResourceHandler("/*.html").addResourceLocations("/WEB-INF/");
 	 }
 	
 	 @Override

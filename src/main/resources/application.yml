@@ -1,6 +1,6 @@
 server:
   port: 8000
-  context-path: /microservice-simple-provider-user
+  context-path: /whxj
 spring:
     datasource:
         url: jdbc:mysql://127.0.0.1:3306/third_dog_account
