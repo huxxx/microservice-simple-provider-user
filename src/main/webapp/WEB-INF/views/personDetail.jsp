@@ -226,7 +226,7 @@
 		  您的浏览器不支持 HTML5 video 标签。
 	  </video>
 	  </div>
-	  <div style="text-align:center;">
+	  <div style="text-align:center;background: #ccc;">
 	  <video width="320" height="240" controls>
 		  <source src="video/movie.mp4" type="video/mp4">
 		  <source src="video/movie.ogg" type="video/ogg">
