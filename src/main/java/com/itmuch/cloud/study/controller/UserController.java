@@ -69,4 +69,12 @@ public class UserController {
 	  return new ModelAndView("personDetail", map);
   }
   
+  @GetMapping("/generateQrcode")
+  public ModelAndView generateQrcode() {
+	  Map map = new HashMap();
+	  map.put("1", "a");
+	  map.put("2", "b");
+	  return new ModelAndView("generateQrcode", map);
+  }
+  
 }

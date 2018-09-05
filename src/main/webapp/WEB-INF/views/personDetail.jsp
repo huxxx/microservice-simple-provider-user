@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head>
-      <title>Bootstrap 模板</title>
+      <title>心目中的黄家驹</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- 引入 Bootstrap -->
 	  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -68,7 +68,7 @@
 		<tr>
 			<td><img border="0" src="images/huangjiaju02.png" alt="Pulpit rock" width="100" height=""></td>
 			<td style="vertical-align: middle;">
-			    <span style="margin-left:20px;">黄家驹</span>
+			    <span style="margin-left:20px;"><font size="4">黄家驹</font></span>
 				</br>
 				<span style="margin-left:20px;">职业：歌手、音乐人、吉他手</span>
 				</br>
@@ -219,7 +219,7 @@
         <li><img border="0" src="images/huangjiaju05.png" alt="Pulpit rock" width="100" height=""></li>
     </ul>
 </div>
-	  <div style="text-align:center;">
+	  <div style="text-align:center;background: #ccc;">
 	  <video width="320" height="240" controls>
 		  <source src="video/movie.mp4" type="video/mp4">
 		  <source src="video/movie.ogg" type="video/ogg">
